@@ -13,6 +13,7 @@ var cl = new xmpp.Component({ jid: argv[2],
 			      password: argv[3],
 			      host: argv[4],
 			      port: argv[5] });
+
 cl.on('online',
       function() {
 	  cl.send(new xmpp.Element('presence',
